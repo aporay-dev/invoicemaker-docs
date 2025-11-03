@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InvoiceMaker Security Policy - How we protect your data">
+    <title>Security Policy - InvoiceMaker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #1d1d1f;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid #0071e3;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #1d1d1f;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #515154;
+            font-size: 1.05em;
+        }
+
+        .last-updated {
+            font-size: 0.95em;
+            color: #86868b;
+            margin-bottom: 30px;
+        }
+
+        .summary-box {
+            background-color: #e8f4fd;
+            border-left: 4px solid #0071e3;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .summary-box h3 {
+            margin-top: 0;
+            color: #0071e3;
+        }
+
+        .summary-box ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .summary-box li {
+            margin-bottom: 8px;
+        }
+
+        .security-feature {
+            background-color: #f9f9fb;
+            border-left: 3px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .security-feature h3 {
+            margin-top: 0;
+            color: #155724;
+        }
+
+        .warning-box {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box strong {
+            color: #721c24;
+        }
+
+        .info-box {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .info-box strong {
+            color: #0c5460;
+        }
+
+        .success-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .success-box strong {
+            color: #155724;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #515154;
+        }
+
+        .contact-section {
+            background-color: #f5f5f7;
+            padding: 25px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .contact-section h3 {
+            margin-top: 0;
+        }
+
+        .email-link {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .links-section {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #d2d2d7;
+        }
+
+        .links-section h3 {
+            margin-top: 0;
+        }
+
+        .links-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links-list li {
+            margin-bottom: 10px;
+        }
+
+        .links-list a {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05em;
+        }
+
+        .links-list a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #d2d2d7;
+            text-align: center;
+            color: #86868b;
+            font-size: 0.95em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        code {
+            background-color: #e8e8ed;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            p, li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Security Policy</h1>
+        <p class="last-updated">Last Updated: [LAST UPDATED]</p>
+
+        <div class="summary-box">
+            <h3>Security at a Glance</h3>
+            <p>InvoiceMaker is built with security and privacy as core principles:</p>
+            <ul>
+                <li><strong>Local-First Architecture:</strong> All your data stays on your device</li>
+                <li><strong>No Cloud Storage:</strong> We don't store your invoices, clients, or business data on our servers</li>
+                <li><strong>iOS Sandboxing:</strong> Protected by Apple's security framework</li>
+                <li><strong>Encryption:</strong> Data encrypted at rest using iOS built-in security</li>
+                <li><strong>No Account Required:</strong> No passwords, no login credentials to steal</li>
+            </ul>
+        </div>
+
+        <h2>1. Data Storage and Protection</h2>
+
+        <div class="security-feature">
+            <h3>Local-Only Storage</h3>
+            <p><strong>Where Your Data Lives:</strong></p>
+            <ul>
+                <li>All invoices, estimates, clients, and business information are stored <strong>exclusively on your device</strong></li>
+                <li>Data is managed using Apple's SwiftData framework</li>
+                <li>Files are stored in the app's sandboxed container, inaccessible to other apps</li>
+                <li>No data is transmitted to our servers or any third-party storage</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <strong>What This Means for You:</strong> If you delete the app, all your data is permanently removed from your device. There are no cloud backups. We recommend exporting important invoices as PDFs for your records.
+        </div>
+
+        <h3>1.1 iOS Device Security</h3>
+        <p>Your data benefits from Apple's industry-leading device security:</p>
+        <ul>
+            <li><strong>Encryption at Rest:</strong> Data is encrypted on your device using iOS file-level encryption</li>
+            <li><strong>Passcode Protection:</strong> When you lock your device with a passcode/Face ID/Touch ID, app data is protected</li>
+            <li><strong>Secure Enclave:</strong> iOS uses dedicated hardware security for cryptographic operations</li>
+            <li><strong>App Sandboxing:</strong> InvoiceMaker cannot access data from other apps, and other apps cannot access InvoiceMaker data</li>
+        </ul>
+
+        <h3>1.2 PDF Export Security</h3>
+        <p>When you export invoices as PDF files:</p>
+        <ul>
+            <li>PDFs are generated locally on your device</li>
+            <li>You control where PDFs are saved (Files app, email, AirDrop, etc.)</li>
+            <li>PDFs are standard documents without DRM or tracking</li>
+            <li>We recommend password-protecting sensitive PDFs before sharing (use Files app or third-party PDF tools)</li>
+        </ul>
+
+        <h2>2. Network Security</h2>
+
+        <h3>2.1 Minimal Network Access</h3>
+        <p>InvoiceMaker has limited network usage:</p>
+        <ul>
+            <li><strong>No backend servers:</strong> The app does not communicate with our servers for data storage or sync</li>
+            <li><strong>Third-party services:</strong> Network access is only used for:
+                <ul>
+                    <li>Google AdMob (free users only) - ad delivery</li>
+                    <li>Apple StoreKit - subscription verification</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>2.2 Third-Party Service Security</h3>
+
+        <div class="security-feature">
+            <h3>Google AdMob (Free Users Only)</h3>
+            <ul>
+                <li><strong>What data is shared:</strong> Device identifiers (IDFA if tracking allowed), app usage, ad interaction</li>
+                <li><strong>Why:</strong> To serve personalized ads and measure ad performance</li>
+                <li><strong>Your control:</strong> Opt out via iOS App Tracking Transparency (ATT) prompt or Settings → Privacy → Tracking</li>
+                <li><strong>Security:</strong> All connections use HTTPS encryption</li>
+                <li><strong>Pro users:</strong> AdMob is completely disabled for Pro subscribers</li>
+            </ul>
+            <p><a href="https://policies.google.com/privacy" class="email-link" target="_blank">Google AdMob Privacy Policy →</a></p>
+        </div>
+
+        <div class="security-feature">
+            <h3>Apple StoreKit (All Users)</h3>
+            <ul>
+                <li><strong>What data is shared:</strong> Purchase receipts, subscription status</li>
+                <li><strong>Why:</strong> To verify Pro subscription purchases</li>
+                <li><strong>Security:</strong> Handled entirely by Apple's secure payment infrastructure</li>
+                <li><strong>Data access:</strong> We receive only a subscription status (active/inactive), not payment details</li>
+            </ul>
+            <p><a href="https://www.apple.com/legal/privacy/" class="email-link" target="_blank">Apple Privacy Policy →</a></p>
+        </div>
+
+        <h2>3. Permissions and Access</h2>
+
+        <h3>3.1 Required Permissions</h3>
+        <p>InvoiceMaker requests minimal permissions:</p>
+
+        <ul>
+            <li><strong>Contacts (Optional):</strong>
+                <ul>
+                    <li><strong>When requested:</strong> Only when you tap "Import from Contacts" to add a client</li>
+                    <li><strong>What we access:</strong> Only the specific contact you select</li>
+                    <li><strong>What we do:</strong> Copy name, email, phone, address to InvoiceMaker client record</li>
+                    <li><strong>Data storage:</strong> Contact data is stored locally and never synced back to Contacts</li>
+                    <li><strong>Your control:</strong> Deny this permission and manually enter client details instead</li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li><strong>App Tracking Transparency / IDFA (Optional):</strong>
+                <ul>
+                    <li><strong>When requested:</strong> On first app launch (iOS 14.5+)</li>
+                    <li><strong>What it does:</strong> Allows Google AdMob to show personalized ads across apps</li>
+                    <li><strong>Free users:</strong> Denying this permission shows non-personalized ads instead</li>
+                    <li><strong>Pro users:</strong> Not requested (no ads shown)</li>
+                    <li><strong>Your control:</strong> Change anytime in Settings → Privacy & Security → Tracking</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="success-box">
+            <strong>What We DON'T Request:</strong> Camera, microphone, location, photos, calendars, reminders, Bluetooth, local network, or any other sensitive permissions.
+        </div>
+
+        <h3>3.2 Data Access by Third Parties</h3>
+        <p><strong>InvoiceMaker does not share your invoice, client, or business data with any third parties.</strong></p>
+
+        <p>The only data shared with third parties is:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> Device identifiers, ad interaction metrics (free users only, if tracking allowed)</li>
+            <li><strong>Apple:</strong> Subscription purchase receipts (all users who subscribe)</li>
+        </ul>
+
+        <p>Your business data (invoices, clients, estimates, financial information) remains <strong>100% local and private</strong>.</p>
+
+        <h2>4. Security Best Practices</h2>
+
+        <h3>4.1 Recommendations for Users</h3>
+        <p>To maximize the security of your data:</p>
+
+        <ol>
+            <li><strong>Enable Device Passcode:</strong> Use a strong passcode, Face ID, or Touch ID to lock your device</li>
+            <li><strong>Keep iOS Updated:</strong> Install security updates promptly (Settings → General → Software Update)</li>
+            <li><strong>Enable Find My iPhone:</strong> Allows remote wipe if device is lost or stolen</li>
+            <li><strong>Export Backups:</strong> Regularly export important invoices as PDFs and store securely (iCloud, encrypted USB drive)</li>
+            <li><strong>Password-Protect PDFs:</strong> Use Files app or third-party tools to encrypt sensitive PDFs before sharing</li>
+            <li><strong>Review Sharing:</strong> When sharing invoices via email/AirDrop, verify recipient before sending</li>
+            <li><strong>Secure Email:</strong> Use secure email providers when emailing invoices containing financial data</li>
+        </ol>
+
+        <h3>4.2 What We Do to Protect You</h3>
+        <ul>
+            <li><strong>No account system:</strong> No passwords to leak, no login credentials to steal</li>
+            <li><strong>No cloud storage:</strong> No centralized database that could be hacked</li>
+            <li><strong>Minimal third-party SDKs:</strong> Only AdMob and StoreKit (both from trusted vendors)</li>
+            <li><strong>Code security:</strong> Regular security reviews and updates</li>
+            <li><strong>App Store distribution:</strong> Code-signed and verified by Apple</li>
+            <li><strong>Sandboxed environment:</strong> Isolated from other apps by iOS security</li>
+        </ul>
+
+        <h2>5. Data Retention and Deletion</h2>
+
+        <h3>5.1 How Long We Keep Data</h3>
+        <p><strong>On Your Device:</strong></p>
+        <ul>
+            <li>Data persists until you manually delete it (swipe to delete items) or uninstall the app</li>
+            <li>No automatic expiration or deletion</li>
+        </ul>
+
+        <p><strong>On Our Servers:</strong></p>
+        <ul>
+            <li>We do not store your invoices, clients, or business data on any servers</li>
+            <li><strong>Exception:</strong> Apple stores subscription receipts per their standard policy</li>
+        </ul>
+
+        <h3>5.2 How to Delete Your Data</h3>
+
+        <p><strong>Delete Individual Items:</strong></p>
+        <ol>
+            <li>Swipe left on any invoice, estimate, or client</li>
+            <li>Tap "Delete"</li>
+            <li>Confirm deletion (permanent and irreversible)</li>
+        </ol>
+
+        <p><strong>Delete All Data:</strong></p>
+        <ol>
+            <li>Open iPhone/iPad Settings</li>
+            <li>Scroll to "InvoiceMaker"</li>
+            <li>Tap "Delete App"</li>
+            <li>All app data is permanently removed from your device</li>
+        </ol>
+
+        <div class="warning-box">
+            <strong>Important:</strong> Data deletion is permanent and cannot be undone. We have no backups of your data. Export important invoices as PDFs before deleting.
+        </div>
+
+        <h2>6. Security Incident Response</h2>
+
+        <h3>6.1 Vulnerability Disclosure</h3>
+        <p>If you discover a security vulnerability in InvoiceMaker, we encourage responsible disclosure:</p>
+
+        <ol>
+            <li><strong>Email us:</strong> <a href="mailto:[YOUR EMAIL]" class="email-link">[YOUR EMAIL]</a> with subject line "Security Vulnerability"</li>
+            <li><strong>Include:</strong>
+                <ul>
+                    <li>Description of the vulnerability</li>
+                    <li>Steps to reproduce</li>
+                    <li>Potential impact</li>
+                    <li>Suggested fix (if applicable)</li>
+                </ul>
+            </li>
+            <li><strong>Give us time:</strong> Allow us reasonable time (typically 90 days) to address the issue before public disclosure</li>
+            <li><strong>Do not:</strong> Publicly disclose the vulnerability before we've had a chance to fix it</li>
+        </ol>
+
+        <div class="success-box">
+            <strong>We appreciate security researchers</strong> who help keep InvoiceMaker safe for all users. Responsible disclosure helps us fix issues quickly and protect the community.
+        </div>
+
+        <h3>6.2 Breach Notification</h3>
+        <p><strong>Current Architecture:</strong> Given our local-first design with no cloud storage:</p>
+        <ul>
+            <li>There is no centralized database that could be breached</li>
+            <li>Your data security depends primarily on your device security</li>
+            <li>If your device is lost, stolen, or compromised, follow Apple's Find My iPhone procedures</li>
+        </ul>
+
+        <p><strong>If We Discover a Vulnerability:</strong></p>
+        <ul>
+            <li>We will release an app update to fix the issue as soon as possible</li>
+            <li>We will notify users via App Store update notes</li>
+            <li>For critical vulnerabilities, we may also send notifications within the app</li>
+            <li>We will provide clear instructions on any actions users should take</li>
+        </ul>
+
+        <h2>7. Children's Privacy and Security</h2>
+
+        <p>InvoiceMaker is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+        <ul>
+            <li>No account creation (no age verification needed)</li>
+            <li>Local-only storage (no data collection)</li>
+            <li>If you believe a child has used the app, simply delete it from their device</li>
+        </ul>
+
+        <h2>8. International Security Standards</h2>
+
+        <h3>8.1 GDPR Compliance (European Users)</h3>
+        <p>InvoiceMaker respects GDPR principles:</p>
+        <ul>
+            <li><strong>Data Minimization:</strong> We collect minimal data (only what's stored locally by you)</li>
+            <li><strong>Purpose Limitation:</strong> Data is used only for app functionality</li>
+            <li><strong>Storage Limitation:</strong> Data persists only as long as you choose to keep it</li>
+            <li><strong>Right to Erasure:</strong> Delete the app anytime to remove all data</li>
+            <li><strong>Data Portability:</strong> Export invoices as standard PDFs</li>
+        </ul>
+
+        <h3>8.2 CCPA Compliance (California Users)</h3>
+        <p>Under the California Consumer Privacy Act:</p>
+        <ul>
+            <li><strong>No data sale:</strong> We do not sell your personal information</li>
+            <li><strong>Transparency:</strong> This policy discloses all data practices</li>
+            <li><strong>Right to delete:</strong> Uninstall the app to delete all local data</li>
+            <li><strong>Right to opt-out:</strong> Disable tracking via iOS ATT settings</li>
+        </ul>
+
+        <h2>9. Updates to This Policy</h2>
+
+        <p>We may update this Security Policy to reflect:</p>
+        <ul>
+            <li>Changes to the app's features or functionality</li>
+            <li>New security measures or best practices</li>
+            <li>Legal or regulatory requirements</li>
+            <li>User feedback and recommendations</li>
+        </ul>
+
+        <p><strong>When we update this policy:</strong></p>
+        <ul>
+            <li>We will update the "Last Updated" date at the top</li>
+            <li>Significant changes will be noted in app update release notes</li>
+            <li>The latest version is always available at [YOUR WEBSITE]/security-policy.html</li>
+        </ul>
+
+        <div class="contact-section">
+            <h3>Contact Us</h3>
+            <p>If you have questions or concerns about security:</p>
+            <p><strong>Email:</strong> <a href="mailto:[YOUR EMAIL]" class="email-link">[YOUR EMAIL]</a></p>
+            <p><strong>Subject Line:</strong> "Security Question" or "Security Vulnerability"</p>
+            <p><strong>Mailing Address:</strong><br>
+            [YOUR COMPANY NAME]<br>
+            [YOUR ADDRESS]<br>
+            [CITY, STATE/PROVINCE, ZIP/POSTAL CODE]<br>
+            [COUNTRY]</p>
+        </div>
+
+        <div class="links-section">
+            <h3>Related Resources</h3>
+            <ul class="links-list">
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="support.html">Support & FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; [CURRENT YEAR] [YOUR COMPANY NAME]. All rights reserved.</p>
+            <p>InvoiceMaker is a product of [YOUR COMPANY NAME]</p>
+        </div>
+    </div>
+</body>
+</html>

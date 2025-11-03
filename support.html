@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InvoiceMaker Support - Get help with invoices, subscriptions, and more">
+    <title>Support - InvoiceMaker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #1d1d1f;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid #0071e3;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #1d1d1f;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #515154;
+            font-size: 1.05em;
+        }
+
+        .last-updated {
+            font-size: 0.95em;
+            color: #86868b;
+            margin-bottom: 30px;
+        }
+
+        .contact-box {
+            background-color: #f5f5f7;
+            border-left: 4px solid #0071e3;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: #0071e3;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .email-link {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .faq-section {
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9fb;
+            border-radius: 8px;
+            border-left: 3px solid #0071e3;
+        }
+
+        .faq-question {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #515154;
+            line-height: 1.7;
+        }
+
+        .faq-answer ul {
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 8px;
+        }
+
+        .faq-answer ol {
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer code {
+            background-color: #e8e8ed;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+
+        .troubleshooting-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .troubleshooting-box h3 {
+            margin-top: 0;
+            color: #856404;
+        }
+
+        .warning-box {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box strong {
+            color: #721c24;
+        }
+
+        .success-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .success-box strong {
+            color: #155724;
+        }
+
+        .links-section {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #d2d2d7;
+        }
+
+        .links-section h3 {
+            margin-top: 0;
+        }
+
+        .links-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .links-list li {
+            margin-bottom: 10px;
+        }
+
+        .links-list a {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05em;
+        }
+
+        .links-list a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #d2d2d7;
+            text-align: center;
+            color: #86868b;
+            font-size: 0.95em;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            p, .faq-answer {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support</h1>
+        <p class="last-updated">Last Updated: [LAST UPDATED]</p>
+
+        <div class="contact-box">
+            <h3>Need Help?</h3>
+            <div class="contact-info">
+                <p>We're here to help! If you can't find the answer you're looking for in our FAQ below, please contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:[YOUR EMAIL]" class="email-link">[YOUR EMAIL]</a></p>
+                <p><strong>Response Time:</strong> We typically respond within 24-48 hours on business days.</p>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-section">
+            <!-- Invoice Creation -->
+            <div class="faq-item">
+                <div class="faq-question">How do I create an invoice?</div>
+                <div class="faq-answer">
+                    <p>Creating an invoice in InvoiceMaker is quick and easy:</p>
+                    <ol>
+                        <li>Open the app and tap the <strong>"Create Invoice"</strong> button on the Invoices tab</li>
+                        <li>Select a client from your list (or tap "Add Client" to create a new one)</li>
+                        <li>Add items to your invoice using the "Add Item" button</li>
+                        <li>Enter item descriptions, quantities, and prices</li>
+                        <li>Optionally add a discount or adjust tax/GST</li>
+                        <li>Tap <strong>"Preview"</strong> to review your invoice</li>
+                        <li>Tap the share button to export as PDF or send via email</li>
+                    </ol>
+                    <p><strong>Goal:</strong> Generate and share an invoice in under 60 seconds!</p>
+                </div>
+            </div>
+
+            <!-- Subscriptions -->
+            <div class="faq-item">
+                <div class="faq-question">What subscription plans are available?</div>
+                <div class="faq-answer">
+                    <p>InvoiceMaker offers the following plans:</p>
+                    <ul>
+                        <li><strong>Free:</strong> $0.00 - Create up to 3 invoices per month with a watermark and ads</li>
+                        <li><strong>Pro Weekly:</strong> $2.99/week - Includes a 3-day free trial, unlimited invoices, no watermark, no ads</li>
+                        <li><strong>Pro Yearly:</strong> $29.99/year - Best value! Unlimited invoices, no watermark, no ads</li>
+                    </ul>
+                    <p>All Pro subscriptions include:</p>
+                    <ul>
+                        <li>✓ Unlimited invoices and estimates</li>
+                        <li>✓ No watermark on PDFs</li>
+                        <li>✓ Ad-free experience</li>
+                        <li>✓ Custom business logo and branding</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Free Trial -->
+            <div class="faq-item">
+                <div class="faq-question">How does the free trial work?</div>
+                <div class="faq-answer">
+                    <p>Our <strong>Pro Weekly</strong> plan includes a 3-day free trial:</p>
+                    <ul>
+                        <li>Start your trial by selecting "Pro Weekly" in the app</li>
+                        <li>Enjoy all Pro features for 3 days completely free</li>
+                        <li>Your subscription begins only after the trial ends</li>
+                        <li>Cancel anytime during the trial to avoid charges</li>
+                    </ul>
+                    <div class="success-box">
+                        <strong>Tip:</strong> The trial gives you full access to test all Pro features before committing!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restore Purchases -->
+            <div class="faq-item">
+                <div class="faq-question">How do I restore my subscription on a new device?</div>
+                <div class="faq-answer">
+                    <p>To restore your subscription:</p>
+                    <ol>
+                        <li>Open InvoiceMaker on your new device</li>
+                        <li>Go to <strong>Settings</strong> (gear icon in top-right)</li>
+                        <li>Tap <strong>"Restore Purchases"</strong></li>
+                        <li>Sign in with the same Apple ID you used to purchase</li>
+                        <li>Your Pro subscription will be restored automatically</li>
+                    </ol>
+                    <p><strong>Important:</strong> You must use the same Apple ID across all devices.</p>
+                </div>
+            </div>
+
+            <!-- Export and Share -->
+            <div class="faq-item">
+                <div class="faq-question">How do I export or share invoices?</div>
+                <div class="faq-answer">
+                    <p>After creating your invoice:</p>
+                    <ol>
+                        <li>Tap <strong>"Preview"</strong> to see the PDF preview</li>
+                        <li>Tap the <strong>Share button</strong> (square with arrow)</li>
+                        <li>Choose how to share:
+                            <ul>
+                                <li><strong>Email:</strong> Send directly to your client</li>
+                                <li><strong>Messages:</strong> Share via iMessage or SMS</li>
+                                <li><strong>AirDrop:</strong> Send to nearby Apple devices</li>
+                                <li><strong>Save to Files:</strong> Save PDF to iCloud Drive or local storage</li>
+                                <li><strong>Print:</strong> Print directly to AirPrint-enabled printers</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p><strong>Free users:</strong> PDFs include a small watermark. Upgrade to Pro to remove it.</p>
+                </div>
+            </div>
+
+            <!-- Clients -->
+            <div class="faq-item">
+                <div class="faq-question">How do I add and manage clients?</div>
+                <div class="faq-answer">
+                    <p>Managing clients is simple:</p>
+                    <p><strong>Adding a Client:</strong></p>
+                    <ol>
+                        <li>Go to the <strong>Clients</strong> tab</li>
+                        <li>Tap <strong>"Add Client"</strong></li>
+                        <li>Enter client details (name, email, phone, address)</li>
+                        <li>Tap <strong>"Save"</strong></li>
+                    </ol>
+                    <p><strong>Import from Contacts:</strong></p>
+                    <ul>
+                        <li>Tap "Import from Contacts" when adding a client</li>
+                        <li>Select a contact from your iPhone address book</li>
+                        <li>Details are automatically filled in</li>
+                    </ul>
+                    <p><strong>Editing/Deleting:</strong></p>
+                    <ul>
+                        <li>Tap a client to view details</li>
+                        <li>Tap "Edit" to update information</li>
+                        <li>Swipe left on a client to delete</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Removing Ads -->
+            <div class="faq-item">
+                <div class="faq-question">How do I remove ads?</div>
+                <div class="faq-answer">
+                    <p>Ads are shown only to free users. To remove all ads:</p>
+                    <ol>
+                        <li>Tap the <strong>"Go Pro"</strong> button (visible on multiple screens)</li>
+                        <li>Choose either <strong>Pro Weekly</strong> or <strong>Pro Yearly</strong></li>
+                        <li>Complete the purchase through Apple's App Store</li>
+                        <li>All ads will disappear immediately after purchase</li>
+                    </ol>
+                    <div class="success-box">
+                        <strong>Bonus:</strong> Going Pro also removes watermarks and gives you unlimited invoices!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cancellation -->
+            <div class="faq-item">
+                <div class="faq-question">How do I cancel my subscription?</div>
+                <div class="faq-answer">
+                    <p>Subscriptions are managed through Apple's App Store, not within the app:</p>
+                    <ol>
+                        <li>Open the <strong>Settings</strong> app on your iPhone/iPad</li>
+                        <li>Tap your name at the top</li>
+                        <li>Tap <strong>"Subscriptions"</strong></li>
+                        <li>Find and tap <strong>"InvoiceMaker"</strong></li>
+                        <li>Tap <strong>"Cancel Subscription"</strong></li>
+                        <li>Confirm cancellation</li>
+                    </ol>
+                    <p><strong>What happens after canceling:</strong></p>
+                    <ul>
+                        <li>You'll continue to have Pro access until the end of your billing period</li>
+                        <li>After expiration, you'll return to the Free plan (3 invoices/month with watermark and ads)</li>
+                        <li>All your data (invoices, clients, estimates) remains saved</li>
+                        <li>You can re-subscribe anytime to restore Pro features</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Data Deletion -->
+            <div class="faq-item">
+                <div class="faq-question">How do I delete my data?</div>
+                <div class="faq-answer">
+                    <p>InvoiceMaker stores all data locally on your device. To delete your data:</p>
+                    <p><strong>Option 1: Delete Individual Items</strong></p>
+                    <ul>
+                        <li>Swipe left on any invoice, estimate, or client to delete it</li>
+                        <li>Confirm deletion when prompted</li>
+                    </ul>
+                    <p><strong>Option 2: Delete All App Data</strong></p>
+                    <ol>
+                        <li>Open your iPhone/iPad <strong>Settings</strong></li>
+                        <li>Scroll down and tap <strong>"InvoiceMaker"</strong></li>
+                        <li>Tap <strong>"Delete App"</strong></li>
+                        <li>This removes the app and all locally stored data</li>
+                    </ol>
+                    <div class="warning-box">
+                        <strong>Important:</strong> Data deletion is permanent and cannot be undone. InvoiceMaker does not store backups on cloud servers.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Profile -->
+            <div class="faq-item">
+                <div class="faq-question">How do I update my business information?</div>
+                <div class="faq-answer">
+                    <p>To update your business details that appear on invoices:</p>
+                    <ol>
+                        <li>Go to <strong>Settings</strong> (gear icon)</li>
+                        <li>Tap <strong>"Business Profile"</strong></li>
+                        <li>Update your:
+                            <ul>
+                                <li>Business name</li>
+                                <li>Address</li>
+                                <li>Email</li>
+                                <li>Phone number</li>
+                                <li>Logo (Pro users only)</li>
+                            </ul>
+                        </li>
+                        <li>Tap <strong>"Save"</strong></li>
+                    </ol>
+                    <p>These details will automatically appear on all new invoices and estimates.</p>
+                </div>
+            </div>
+
+            <!-- Estimates -->
+            <div class="faq-item">
+                <div class="faq-question">What's the difference between an invoice and an estimate?</div>
+                <div class="faq-answer">
+                    <p><strong>Invoice:</strong> A bill for completed work or delivered goods. It requests payment and tracks amounts due.</p>
+                    <p><strong>Estimate:</strong> A quote or proposal for future work. It shows projected costs before the work begins.</p>
+                    <p><strong>Workflow:</strong></p>
+                    <ul>
+                        <li>Create an <strong>Estimate</strong> to give clients a price quote</li>
+                        <li>When they accept, convert it to an <strong>Invoice</strong> with one tap</li>
+                        <li>Track payment status on the invoice</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Payment Tracking -->
+            <div class="faq-item">
+                <div class="faq-question">How do I mark an invoice as paid?</div>
+                <div class="faq-answer">
+                    <p>To update payment status:</p>
+                    <ol>
+                        <li>Open the invoice from your <strong>Invoices</strong> list</li>
+                        <li>Tap the invoice to view details</li>
+                        <li>Tap <strong>"Mark as Paid"</strong></li>
+                        <li>Optionally enter payment details (date, method, reference)</li>
+                        <li>Tap <strong>"Save"</strong></li>
+                    </ol>
+                    <p>The invoice status will update to "Paid" and appear in your Reports.</p>
+                </div>
+            </div>
+
+            <!-- Reports -->
+            <div class="faq-item">
+                <div class="faq-question">How do I view my income reports?</div>
+                <div class="faq-answer">
+                    <p>Track your business income in the <strong>Reports</strong> tab:</p>
+                    <ul>
+                        <li>View total income (paid invoices)</li>
+                        <li>See quarterly breakdowns (Q1, Q2, Q3, Q4)</li>
+                        <li>Export reports as PDF or CSV</li>
+                        <li>Filter by date range</li>
+                    </ul>
+                    <p><strong>Note:</strong> Reports only include invoices marked as "Paid" or "Partial."</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Troubleshooting</h2>
+
+        <div class="troubleshooting-box">
+            <h3>Common Issues and Solutions</h3>
+        </div>
+
+        <div class="faq-section">
+            <div class="faq-item">
+                <div class="faq-question">App crashes or freezes</div>
+                <div class="faq-answer">
+                    <p>Try these steps in order:</p>
+                    <ol>
+                        <li><strong>Force close the app:</strong> Double-click home button (or swipe up), swipe away InvoiceMaker, reopen</li>
+                        <li><strong>Restart your device:</strong> Power off your iPhone/iPad completely, then turn it back on</li>
+                        <li><strong>Update the app:</strong> Check App Store for available updates</li>
+                        <li><strong>Update iOS:</strong> Go to Settings → General → Software Update</li>
+                        <li><strong>Reinstall the app:</strong> Delete and reinstall from App Store (your data is stored locally, but create backups first)</li>
+                    </ol>
+                    <p>If issues persist, contact us at <a href="mailto:[YOUR EMAIL]" class="email-link">[YOUR EMAIL]</a> with details about your device model and iOS version.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">PDFs not generating or sharing</div>
+                <div class="faq-answer">
+                    <p>If you can't generate or share PDFs:</p>
+                    <ul>
+                        <li>Ensure you have <strong>storage space</strong> available on your device</li>
+                        <li>Check that you've granted <strong>Files access</strong> permissions (Settings → InvoiceMaker)</li>
+                        <li>Try sharing via a different method (Email instead of AirDrop, etc.)</li>
+                        <li>Restart the app and try again</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Subscription not activating</div>
+                <div class="faq-answer">
+                    <p>If you purchased Pro but still see ads or watermarks:</p>
+                    <ol>
+                        <li>Go to Settings → <strong>"Restore Purchases"</strong></li>
+                        <li>Ensure you're signed in with the correct Apple ID</li>
+                        <li>Close and reopen the app</li>
+                        <li>Check App Store → Account → Subscriptions to verify the subscription is active</li>
+                    </ol>
+                    <p>If the problem continues, email us at <a href="mailto:[YOUR EMAIL]" class="email-link">[YOUR EMAIL]</a> with your Apple receipt.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can't import contacts</div>
+                <div class="faq-answer">
+                    <p>If "Import from Contacts" doesn't work:</p>
+                    <ol>
+                        <li>Go to iPhone <strong>Settings</strong> → <strong>InvoiceMaker</strong></li>
+                        <li>Enable <strong>"Contacts"</strong> permission</li>
+                        <li>Return to the app and try again</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Data not syncing across devices</div>
+                <div class="faq-answer">
+                    <p><strong>Important:</strong> InvoiceMaker currently stores data locally on each device only. Data does not sync across devices via iCloud.</p>
+                    <p>If you switch devices:</p>
+                    <ul>
+                        <li>Export your invoices as PDFs before switching</li>
+                        <li>Manually re-enter client information on the new device</li>
+                        <li>Your <strong>Pro subscription</strong> will sync (use "Restore Purchases")</li>
+                    </ul>
+                    <div class="success-box">
+                        <strong>Coming Soon:</strong> iCloud sync is planned for a future update!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <h3>Related Resources</h3>
+            <ul class="links-list">
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="security-policy.html">Security Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="contact-box" style="margin-top: 40px;">
+            <h3>Still Need Help?</h3>
+            <div class="contact-info">
+                <p>If you couldn't find the answer you were looking for, we're here to help!</p>
+                <p><strong>Email us:</strong> <a href="mailto:[YOUR EMAIL]" class="email-link">[YOUR EMAIL]</a></p>
+                <p>Please include:</p>
+                <ul>
+                    <li>Your device model (e.g., iPhone 15 Pro)</li>
+                    <li>iOS version (e.g., iOS 17.2)</li>
+                    <li>App version (visible in Settings)</li>
+                    <li>A detailed description of your issue</li>
+                    <li>Screenshots if applicable</li>
+                </ul>
+                <p>We typically respond within 24-48 hours on business days.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; [CURRENT YEAR] [YOUR COMPANY NAME]. All rights reserved.</p>
+            <p>InvoiceMaker is a product of [YOUR COMPANY NAME]</p>
+        </div>
+    </div>
+</body>
+</html>
